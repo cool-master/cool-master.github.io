@@ -1,358 +1,1392 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" dir="rtl" lang="he-IL"
-	prefix="og: https://ogp.me/ns#" > <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" dir="rtl" lang="he-IL"
-	prefix="og: https://ogp.me/ns#" > <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" dir="rtl" lang="he-IL"
-	prefix="og: https://ogp.me/ns#" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" dir="rtl" lang="he-IL"
-	prefix="og: https://ogp.me/ns#" > <!--<![endif]-->
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	
-		<!-- All in One SEO 4.4.0.1 - aioseo.com -->
-		<title>רספברי פיי | אינטרנט ישראל - Part 2</title>
-		<meta name="description" content="רספברי פיי הוא מחשב קטן ונפלא שאפשר להשתמש בו ללימוד, כתחנת עבודה, כשרת אינטרנט, כבסיס למערכת IoT ובעצם לכל דבר ועניין. בסדרת המדריכים הזו אנו לומדים על איך מתקינים ועובדים עם רספברי פיי. - Part 2" />
-		<meta name="robots" content="noindex, nofollow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-		<link rel="canonical" href="https://internet-israel.com/category/%D7%9E%D7%93%D7%A8%D7%99%D7%9B%D7%99%D7%9D/raspberrypi/page/2/" />
-		<link rel="prev" href="https://internet-israel.com/category/%D7%9E%D7%93%D7%A8%D7%99%D7%9B%D7%99%D7%9D/raspberrypi/" />
-		<meta name="generator" content="All in One SEO (AIOSEO) 4.4.0.1" />
-		<meta name="google" content="nositelinkssearchbox" />
-		<!-- All in One SEO -->
-
-<link rel="alternate" type="application/rss+xml" title="אינטרנט ישראל &laquo; פיד‏" href="https://internet-israel.com/feed/" />
-<link rel="alternate" type="application/rss+xml" title="אינטרנט ישראל &laquo; פיד תגובות‏" href="https://internet-israel.com/comments/feed/" />
-<link rel="alternate" type="application/rss+xml" title="אינטרנט ישראל &laquo; פיד מהקטגוריה רספברי פיי" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/feed/" />
-<script type="text/javascript">
-window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/internet-israel.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.2"}};
-/*! This file is auto-generated */
-!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
-</script>
-<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 0.07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
+<meta http-equiv=Content-Type content="text/html; charset=windows-1255">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="index.files/filelist.xml">
+<link rel=Preview href="index.files/preview.wmf">
+<link rel=Edit-Time-Data href="index.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
 </style>
-	<link rel='stylesheet' id='wp-block-library-rtl-css' href='https://internet-israel.com/wp-includes/css/dist/block-library/style-rtl.min.css?ver=6.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='classic-theme-styles-css' href='https://internet-israel.com/wp-includes/css/classic-themes.min.css?ver=6.2.2' type='text/css' media='all' />
-<style id='global-styles-inline-css' type='text/css'>
-body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
-.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
-:where(.wp-block-columns.is-layout-flex){gap: 2em;}
-.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>user1</o:Author>
+  <o:Template>���� ����� ������.dotx</o:Template>
+  <o:LastAuthor>user1</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2023-07-06T23:29:00Z</o:Created>
+  <o:LastSaved>2023-07-06T23:29:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>32</o:Words>
+  <o:Characters>163</o:Characters>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>194</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="index.files/themedata.thmx">
+<link rel=colorSchemeMapping href="index.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:AttachedTemplate
+   HRef="C:\Users\user1\AppData\Roaming\Microsoft\Templates\���� ����� ������.dotx"></w:AttachedTemplate>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-CN</w:LidThemeAsian>
+  <w:LidThemeComplexScript>HE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="36" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:\5B8B\4F53;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Century Gothic";
+	panose-1:2 11 5 2 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:"\@SimSun";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:515 680460288 22 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:2.0pt;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:1.45pt;
+	mso-pagination:widow-orphan;
+	font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:����;
+	margin-top:2.0pt;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	mso-element:frame;
+	mso-element-frame-hspace:9.0pt;
+	mso-element-wrap:around;
+	mso-element-anchor-vertical:paragraph;
+	mso-element-anchor-horizontal:column;
+	mso-element-left:39.8pt;
+	mso-element-top:138.75pt;
+	mso-height-rule:exactly;
+	font-size:60.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	text-transform:uppercase;
+	mso-font-kerning:0pt;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h2
+	{mso-style-qformat:yes;
+	mso-style-next:����;
+	margin-top:2.0pt;
+	margin-right:180.0pt;
+	margin-bottom:30.0pt;
+	margin-left:139.7pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h2.CxSpFirst
+	{mso-style-qformat:yes;
+	mso-style-next:����;
+	mso-style-type:export-only;
+	margin-top:2.0pt;
+	margin-right:180.0pt;
+	margin-bottom:0cm;
+	margin-left:139.7pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h2.CxSpMiddle
+	{mso-style-qformat:yes;
+	mso-style-next:����;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:180.0pt;
+	margin-bottom:0cm;
+	margin-left:139.7pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h2.CxSpLast
+	{mso-style-qformat:yes;
+	mso-style-next:����;
+	mso-style-type:export-only;
+	margin-top:0cm;
+	margin-right:180.0pt;
+	margin-bottom:30.0pt;
+	margin-left:139.7pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:20.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h3
+	{mso-style-qformat:yes;
+	mso-style-next:����;
+	margin-top:2.0pt;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:1.45pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	mso-element:frame;
+	mso-element-frame-hspace:9.0pt;
+	mso-element-wrap:around;
+	mso-element-anchor-vertical:paragraph;
+	mso-element-anchor-horizontal:column;
+	mso-element-left:39.8pt;
+	mso-element-top:307.45pt;
+	mso-height-rule:exactly;
+	font-size:20.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-link:"����� 4 ��";
+	mso-style-next:����;
+	margin-top:2.0pt;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:1.45pt;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#ECBD17;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;
+	font-style:italic;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-priority:99;
+	mso-style-link:"����� ������ ��";
+	margin-top:0cm;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:1.45pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 234.0pt right 468.0pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"����� ������ ��";
+	margin-top:0cm;
+	margin-right:1.45pt;
+	margin-bottom:0cm;
+	margin-left:1.45pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 234.0pt right 468.0pt;
+	font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#3A3363;
+	mso-themecolor:text2;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.MsoPlaceholderText
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	color:gray;}
+span.MsoSubtleEmphasis
+	{mso-style-noshow:yes;
+	mso-style-priority:19;
+	mso-style-qformat:yes;
+	color:#A1810D;
+	mso-themecolor:accent1;
+	mso-themeshade:128;
+	font-style:italic;}
+span.a
+	{mso-style-name:"����� ������ ��";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"����� ������";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	color:#A1810D;
+	mso-themecolor:accent1;
+	mso-themeshade:128;
+	font-weight:bold;}
+span.a0
+	{mso-style-name:"����� ������ ��";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"����� ������";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	color:#A1810D;
+	mso-themecolor:accent1;
+	mso-themeshade:128;
+	font-weight:bold;}
+span.4
+	{mso-style-name:"����� 4 ��";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"����� 4";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:Tahoma;
+	color:#ECBD17;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;
+	font-style:italic;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:SimSun;
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:Gisha;
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("index.files/header.html") fs;
+	mso-footnote-continuation-separator:url("index.files/header.html") fcs;
+	mso-endnote-separator:url("index.files/header.html") es;
+	mso-endnote-continuation-separator:url("index.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:0cm 0cm 0cm 0cm;
+	mso-header-margin:0cm;
+	mso-footer-margin:0cm;
+	mso-header:url("index.files/header.html") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
 </style>
-<link rel='stylesheet' id='wp-notice-plugin-styles-css' href='https://internet-israel.com/wp-content/plugins/wp-notice/public/assets/css/public.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-notice-fonts-awsome-plugin-styles-css' href='https://internet-israel.com/wp-content/plugins/wp-notice/public/assets/css/font-awesome.min.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='wp-tutorial-maker-plugin-styles-css' href='https://internet-israel.com/wp-content/plugins/wp-tutorial-maker/public/assets/css/public.css?ver=1.2' type='text/css' media='all' />
-<link rel='stylesheet' id='pojo-css-framework-css' href='https://internet-israel.com/wp-content/themes/scoop/assets/bootstrap/css/bootstrap.min.css?ver=3.2.0' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css' href='https://internet-israel.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='pojo-base-style-css' href='https://internet-israel.com/wp-content/themes/scoop/core/assets/css/style.min.css?ver=1.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='pojo-style-css' href='https://internet-israel.com/wp-content/themes/scoop-child/assets/css/style.css?ver=1.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='pojo-base-style-rtl-css' href='https://internet-israel.com/wp-content/themes/scoop/core/assets/css/rtl.min.css?ver=1.8.1' type='text/css' media='all' />
-<link rel='stylesheet' id='pojo-style-rtl-css' href='https://internet-israel.com/wp-content/themes/scoop-child/assets/css/rtl.css?ver=1.8.1' type='text/css' media='all' />
-<script type='text/javascript' src='https://internet-israel.com/wp-content/plugins/jquery-updater/js/jquery-3.7.0.min.js?ver=3.7.0' id='jquery-core-js'></script>
-<script type='text/javascript' src='https://internet-israel.com/wp-content/plugins/jquery-updater/js/jquery-migrate-3.4.0.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
-<link rel="https://api.w.org/" href="https://internet-israel.com/wp-json/" /><link rel="alternate" type="application/json" href="https://internet-israel.com/wp-json/wp/v2/categories/178" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://internet-israel.com/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://internet-israel.com/wp-includes/wlwmanifest.xml" />
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Open+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Heebo:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|PT+Sans:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=hebrew"><style type="text/css">body{background-color: rgba(242, 242, 242, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #000000; font-family: 'Heebo', Arial, sans-serif; font-weight: normal; font-size: 15px;line-height: 25px;}#primary{background-color: rgba(255, 255, 255, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;}button,.button,#commentform .button{color: #ffffff; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 15px;text-transform: uppercase;background-color: #4bb8ab;border-color: #4bb8ab;}button:hover,.button:hover,#commentform .button:hover{color: #ffffff;background-color: #38b7a6;border-color: #4bb8ab;}div.logo-text a{color: #dd3333; font-family: 'Tahoma', Arial, sans-serif; font-weight: bold; font-size: 20px;line-height: 1em;}.logo{margin-top: 0px;margin-bottom: 0px;}#top-bar{background-color: rgba(232, 232, 232, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}#top-bar, #top-bar .widget-title{color: #000000; font-family: 'Open Sans', Arial, sans-serif; font-weight: 600; font-size: 12px;text-transform: uppercase;letter-spacing: 0px;line-height: 45px;}#top-bar a{color: #000000;}#top-bar a:hover{color: #aaaaaa;}#header, .sticky-header{background-color: rgba(124, 124, 124, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}.sf-menu a, .mobile-menu a{color: #ffffff; font-family: 'Oswald', Arial, sans-serif; font-weight: 400; font-size: 16px;text-transform: uppercase;}.sf-menu a:hover,.sf-menu li.active a, .sf-menu li.current-menu-item > a,.sf-menu .sfHover > a,.sf-menu .sfHover > li.current-menu-item > a,.sf-menu li.current-menu-ancestor > a,.mobile-menu a:hover,.mobile-menu li.current-menu-item > a, a.search-toggle .fa-times{color: #ffffff;}.nav-main .sf-menu .sub-menu{background-color: #333333;}.nav-main .sf-menu .sub-menu li:hover > a,.nav-main .sf-menu .sub-menu li.current-menu-item > a{background-color: #333333;color: #ffffff;}.nav-main .sf-menu .sub-menu li a{color: #bdbdbd; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 13px;line-height: 3.3em;}.search-section{background-color: rgba(51, 51, 51, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}.search-section,.search-section .form-search .field{color: #8f8f8f;}#sub-header{background-color: rgba(215, 215, 215, 1);background-position: top center;background-repeat: repeat-x;background-size: auto;background-attachment: scroll;}#sub-header, #sub-header .widget-title{color: #3b3b3b; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;letter-spacing: 1.5px;line-height: 45px;}#sub-header a{color: #3b3b3b;}#sub-header a:hover{color: #aaaaaa;}#title-bar{height: 100px;line-height: 100px;color: #929292; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 19px;text-transform: uppercase;}#title-bar.title-bar-style-custom_bg{background-color: rgba(255, 255, 255, 1);background-position: center center;background-repeat: repeat;background-size: cover;background-attachment: scroll;}#title-bar div.breadcrumbs, #title-bar div.breadcrumbs a{color: #ffffff; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;letter-spacing: 1.2px;}a{color: #7f7f7f;}a:hover, a:focus{color: #494949;}::selection{color: #ffffff;background: #4bb8ab;}::-moz-selection{color: #ffffff;background: #4bb8ab;}h1{color: #0a0a0a; font-family: 'Heebo', Arial, sans-serif; font-weight: normal; font-size: 32px;text-transform: uppercase;line-height: 1.3em;}h2{color: #4c4c4c; font-family: 'Oswald', Arial, sans-serif; font-weight: 200; font-size: 32px;text-transform: uppercase;line-height: 1.3em;}h3{color: #353535; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 21px;text-transform: uppercase;line-height: 31px;}h4{color: #6f6f6f; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 20px;text-transform: uppercase;line-height: 1.2em;}h5{color: #929292; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: uppercase;line-height: 1.2em;}h6{color: #6d6d6d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 17px;text-transform: uppercase;line-height: 1.5em;}h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 23px;text-transform: uppercase;line-height: 1.2em;}.media.list-two h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 16px;text-transform: uppercase;line-height: 1.2em;}.media.list-three h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 15px;text-transform: uppercase;line-height: 1.2em;}.media.list-big-thumbnail h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 30px;text-transform: uppercase;line-height: 35px;}.media.list-format h3.media-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 27px;text-transform: uppercase;line-height: 30px;}.grid-item.grid-one h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 20px;text-transform: uppercase;line-height: 1.2em;}.grid-item.grid-two h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 23px;text-transform: uppercase;line-height: 1.2em;}.grid-item.grid-three h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 19px;text-transform: uppercase;line-height: 1.3em;}.grid-item.grid-four h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 17px;text-transform: uppercase;line-height: 1.2em;}.posts-group .featured-post h3.media-heading,.posts-group .featured-post h3.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 22px;text-transform: uppercase;line-height: 1.2em;}.posts-group h3.media-heading,.posts-group h4.grid-heading{color: #2d2d2d; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 17px;text-transform: uppercase;line-height: 20px;}.entry-meta > span, .more-link span,.read-more, .grid-item .entry-thumbnail .entry-meta span{color: #b8b8b8; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;line-height: 2.6em;}.entry-post .entry-meta > span{color: #6f6f6f; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;line-height: 3em;}.entry-excerpt{color: #8c8c8c; font-family: 'PT Sans', Arial, sans-serif; font-weight: normal; font-size: 14px;line-height: 1.5em;}.entry-post .entry-excerpt{color: #0a0a0a; font-family: 'PT Sans', Arial, sans-serif; font-weight: bold; font-size: 17px;font-style: italic;line-height: 20px;}.category-label{color: #ffffff; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 9px;text-transform: uppercase;}#primary #breadcrumbs,#primary #breadcrumbs a, nav.post-navigation a{color: #929292; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 11px;text-transform: uppercase;line-height: 4em;}#sidebar{color: #878787; font-family: 'PT sans', Arial, sans-serif; font-weight: normal; font-size: 15px;line-height: 21px;}#sidebar a{color: #707070;}#sidebar a:hover{color: #aaaaaa;}#sidebar .widget-title{color: #000000; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: uppercase;line-height: 1;}#footer-widgets{background-color: rgba(65, 65, 65, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #b0b0b0; font-family: 'PT Sans', Arial, sans-serif; font-weight: normal; font-size: 15px;line-height: 1.5em;}#footer-widgets a{color: #888888;}#footer-widgets a:hover{color: #b7b7b7;}#footer-widgets .widget-title{color: #b0b0b0; font-family: 'Oswald', Arial, sans-serif; font-weight: bold; font-size: 17px;text-transform: uppercase;line-height: 20px;}#footer-copyright{background-color: rgba(65, 65, 65, 1);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;color: #8e8e8e; font-family: 'Oswald', Arial, sans-serif; font-weight: normal; font-size: 10px;text-transform: uppercase;line-height: 70px;}#footer-copyright a{color: #c1c1c1;}#footer-copyright a:hover{color: #ffffff;}#pojo-scroll-up{width: 50px;height: 50px;line-height: 50px;background-color: rgba(51, 51, 51, 0.6);background-position: top center;background-repeat: repeat;background-size: auto;background-attachment: scroll;}#pojo-scroll-up a{color: #eeeeee;}#primary #main.sidebar-right,#primary #main.sidebar-left,#primary .media, .align-pagination .pagination,.single .entry-post .entry-meta, #primary #main .entry-post .entry-sharing + .entry-content,.author-info, body.rtl #primary #main.sidebar-right,body.rtl #primary #main.sidebar-left,body.rtl #primary #main .entry-post .entry-sharing + .entry-content, .media.grid-item.list-two:nth-child(n+3) .item-inner,.media.grid-item.list-three:nth-child(n+4) .item-inner,.posts-group .grid-item.media.featured-post .item-inner,.posts-group .grid-item.media.list-item:nth-child(n+4) .item-inner,.posts-group.featured-list-aside .media.list-item:nth-child(n+3) .item-inner,#primary .widget .widget-title, #primary .pb-widget-inner .pb-widget-title{border-color: #000000;}.sf-menu a, .menu-no-found,.sf-menu li.pojo-menu-search,.search-header{line-height: 30px;}.sf-menu li:hover ul, .sf-menu li.sfHover ul{top: 30px;}a.search-toggle{color: #ffffff;}.navbar-toggle{border-color: #ffffff;}.icon-bar{background-color: #ffffff;}</style>
-		<meta name="generator" content="Elementor 3.14.1; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, a11y_improvements, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
-<link rel="preload" as="style" href="https://internet-israel.com/wp-content/plugins/code-prettify/prettify/prettify.css" /><link rel="icon" href="https://internet-israel.com/wp-content/uploads/2021/11/favicon-1.png" sizes="32x32" />
-<link rel="icon" href="https://internet-israel.com/wp-content/uploads/2021/11/favicon-1.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://internet-israel.com/wp-content/uploads/2021/11/favicon-1.png" />
-<meta name="msapplication-TileImage" content="https://internet-israel.com/wp-content/uploads/2021/11/favicon-1.png" />
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"���� �����";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+table.MsoTableGrid
+	{mso-style-name:"��� ����";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:39;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0cm;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Century Gothic",sans-serif;
+	mso-ascii-font-family:"Century Gothic";
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:"Century Gothic";
+	mso-hansi-theme-font:minor-latin;
+	mso-fareast-language:HE;
+	mso-bidi-language:AR-SA;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2053"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout></xml><![endif]-->
 </head>
-<body class="rtl archive paged category category-raspberrypi category-178 paged-2 category-paged-2 layout-sidebar-right elementor-default elementor-kit-8963">
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;" ><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB" ><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><div id="container" class="wide">
-		
-			<section id="top-bar">
-			<div class="container">
-				<div class="pull-left">
-									</div>
-				<div class="pull-right">
-									</div>
-			</div><!-- .container -->
-		</section>
-		<header id="header" class="logo-left" role="banner">
-			<div class="container">
-				<div class="logo">
-											<div class="logo-img">
-							<a href="https://internet-israel.com/" rel="home"><img src="https://internet-israel.com/wp-content/uploads/2015/11/internet_israel_header_logo.png" alt="אינטרנט ישראל" class="logo-img-primary" /></a>
-						</div>
-															<button type="button" class="navbar-toggle visible-xs" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">תפריט</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-									</div><!--.logo -->
-				<nav class="nav-main" role="navigation">
-					<div class="navbar-collapse collapse">
-						<div class="nav-main-inner">
-															<ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99" class="sf-menu hidden-xs"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%a8%d7%90%d7%a9%d7%99 first-item menu-item-4997"><a href="/"><span>ראשי</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-%d7%90%d7%95%d7%93%d7%95%d7%aa-%d7%a8%d7%9f-%d7%91%d7%a8-%d7%96%d7%99%d7%a7-%d7%95%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98-%d7%99%d7%a9%d7%a8%d7%90%d7%9c menu-item-4995"><a href="https://internet-israel.com/about/"><span>אודות רן בר-זיק ואינטרנט ישראל</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%a2%d7%a8%d7%95%d7%a5-%d7%98%d7%9c%d7%92%d7%a8%d7%9d menu-item-7389"><a href="https://t.me/interil"><span>ערוץ טלגרם</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%9e%d7%a1%d7%98%d7%95%d7%93%d7%95%d7%9f menu-item-6047"><a target="_blank" href="https://tooot.im/@barzik"><span>מסטודון</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%94%d7%aa%d7%97%d7%91%d7%a8%d7%95-%d7%90%d7%9c%d7%99-%d7%91%d7%98%d7%95%d7%95%d7%99%d7%98%d7%a8 menu-item-6046"><a title="התחברו אלי בטוויטר" target="_blank" href="https://twitter.com/barzik"><span>התחברו אלי בטוויטר</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%94%d7%aa%d7%97%d7%91%d7%a8%d7%95-%d7%90%d7%9c%d7%99-%d7%91%d7%9c%d7%99%d7%a0%d7%a7%d7%93%d7%90%d7%99%d7%9f menu-item-6110"><a title="התחברו אלי בלינקדאין" href="https://www.linkedin.com/in/barzik"><span>התחברו אלי בלינקדאין</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-%d7%a1%d7%a4%d7%a8-%d7%92%d7%90%d7%95%d7%95%d7%94%d7%a1%d7%a7%d7%a8%d7%99%d7%a4%d7%98 menu-item-8830"><a href="https://hebdevbook.com"><span>ספר ג'אווהסקריפט</span></a></li>
-</ul><ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a8%d7%90%d7%a9%d7%99-1" class="mobile-menu visible-xs"><li class="menu-item menu-item-type-custom menu-item-object-custom first-item menu-item-4997"><a href="/"><span>ראשי</span></a></li>
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4995"><a href="https://internet-israel.com/about/"><span>אודות רן בר-זיק ואינטרנט ישראל</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7389"><a href="https://t.me/interil"><span>ערוץ טלגרם</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6047"><a target="_blank" href="https://tooot.im/@barzik"><span>מסטודון</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6046"><a title="התחברו אלי בטוויטר" target="_blank" href="https://twitter.com/barzik"><span>התחברו אלי בטוויטר</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6110"><a title="התחברו אלי בלינקדאין" href="https://www.linkedin.com/in/barzik"><span>התחברו אלי בלינקדאין</span></a></li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-8830"><a href="https://hebdevbook.com"><span>ספר ג'אווהסקריפט</span></a></li>
-</ul>																					</div>
-					</div>
-				</nav><!--/#nav-menu -->
-			</div><!-- /.container -->
-		</header>
 
-		
-		<section id="sub-header">
-			<div class="container">
-				<div class="pull-left">
-									</div>
-				<div class="pull-right">
-									</div>
-			</div><!-- .container -->
-		</section>
+<body lang=EN-US style='tab-interval:36.0pt;word-wrap:break-word'>
 
-		<div class="sticky-header-running"></div>
+<div class=WordSection1>
 
-		
-	
-		
-	<div id="primary">
-		<div class="container">
-			<div id="content" class="row">
-		<section id="main" class="col-sm-12 col-md-8 sidebar-right" role="main">
-		<header class="entry-header">
-					<div id="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList"><span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-					<a href="https://internet-israel.com" itemprop="item">
-					<span itemprop="name">ראשי</span>
-					<meta itemprop="position" content="0" />
-					</a></span> <span class="separator">&raquo;</span> <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-					<a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/" itemprop="item">
-					<span itemprop="name">מדריכים</span>
-					<meta itemprop="position" content="1" />
-					</a></span> <span class="separator">&raquo;</span> <span class="current">רספברי פיי (עמוד 2)</span></div>				<div class="page-title">
-			<h1 class="entry-title">כל הפוסטים ב<span>רספברי פיי</span></h1>
-		</div>
-	</header>
+<div align=right>
 
-	<div id="list-items">			<article id="post-9846" class="media format-icon-show pojo-class-item post-9846 post type-post status-publish format-standard has-post-thumbnail hentry category-raspberrypi tag-raspberry-pi">
-	<div class="media-body">
-		<div class="entry-meta">
-										<span><time datetime="2022-01-30" class="entry-date date published updated"><a href="https://internet-israel.com/2022/01/">ינואר 30, 2022</a></time></span>
-										<span class="entry-time">11:32 am</span>
-										<span class="entry-comment"><a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%94%d7%aa%d7%a7%d7%a0%d7%aa-node-red-%d7%a2%d7%9c-%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/#comments" class="comments" >תגובה אחת</a></span>
-					</div>
-		<h3 class="media-heading entry-title">
-			<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%94%d7%aa%d7%a7%d7%a0%d7%aa-node-red-%d7%a2%d7%9c-%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/">התקנת Node-RED על רספברי פיי</a>
-		</h3>
-		<div class="entry-excerpt"><p>מערכת Node-RED היא מערכת ויזואלית שמאפשרת עבודה ויזואלית ומאוד נעימה על רספברי פיי.</p></div>
-					<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%94%d7%aa%d7%a7%d7%a0%d7%aa-node-red-%d7%a2%d7%9c-%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/" class="read-more">קרא עוד &larr;</a>			</div>
-</article>			<article id="post-9856" class="media format-icon-show pojo-class-item post-9856 post type-post status-publish format-standard has-post-thumbnail hentry category-raspberrypi tag-raspberry-pi">
-	<div class="media-body">
-		<div class="entry-meta">
-										<span><time datetime="2022-02-13" class="entry-date date published updated"><a href="https://internet-israel.com/2022/02/">פברואר 13, 2022</a></time></span>
-										<span class="entry-time">11:07 am</span>
-										<span class="entry-comment"><a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%a2%d7%91%d7%95%d7%93%d7%94-%d7%a2%d7%9d-node-red-%d7%95%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/#respond" class="comments" >אין תגובות</a></span>
-					</div>
-		<h3 class="media-heading entry-title">
-			<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%a2%d7%91%d7%95%d7%93%d7%94-%d7%a2%d7%9d-node-red-%d7%95%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/">עבודה עם Node-RED ורספברי פיי</a>
-		</h3>
-		<div class="entry-excerpt"><p>דוגמה מעולה לפרויקט מלהיב עם Sense HAT שמנגיש מטריצת LED וגם חיישנים.</p></div>
-					<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%a2%d7%91%d7%95%d7%93%d7%94-%d7%a2%d7%9d-node-red-%d7%95%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/" class="read-more">קרא עוד &larr;</a>			</div>
-</article>			<article id="post-9885" class="media format-icon-show pojo-class-item post-9885 post type-post status-publish format-standard has-post-thumbnail hentry category-raspberrypi tag-raspberry-pi">
-	<div class="media-body">
-		<div class="entry-meta">
-										<span><time datetime="2022-07-03" class="entry-date date published updated"><a href="https://internet-israel.com/2022/07/">יולי 3, 2022</a></time></span>
-										<span class="entry-time">7:07 am</span>
-										<span class="entry-comment"><a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%97%d7%99%d7%91%d7%95%d7%a8-%d7%9e%d7%a6%d7%9c%d7%9e%d7%94-%d7%9c%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/#comments" class="comments" >תגובה אחת</a></span>
-					</div>
-		<h3 class="media-heading entry-title">
-			<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%97%d7%99%d7%91%d7%95%d7%a8-%d7%9e%d7%a6%d7%9c%d7%9e%d7%94-%d7%9c%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/">חיבור מצלמה לרספברי פיי</a>
-		</h3>
-		<div class="entry-excerpt"><p>חיבור מצלמה לרספברי פיי, עבודה עם תמונות סטילס וניתוח שלהן עם בינה מלאכותית והכל בכמעט אפס קוד.</p></div>
-					<a href="https://internet-israel.com/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/%d7%97%d7%99%d7%91%d7%95%d7%a8-%d7%9e%d7%a6%d7%9c%d7%9e%d7%94-%d7%9c%d7%a8%d7%a1%d7%a4%d7%91%d7%a8%d7%99-%d7%a4%d7%99%d7%99/" class="read-more">קרא עוד &larr;</a>			</div>
-</article>		</div>	<div class="align-pagination clearfix"><ul class="pagination"><li data-page="1"><a href="https://internet-israel.com/category/%D7%9E%D7%93%D7%A8%D7%99%D7%9B%D7%99%D7%9D/raspberrypi/">1</a></li><li data-page="2" class="active"><a href="https://internet-israel.com/category/%D7%9E%D7%93%D7%A8%D7%99%D7%9B%D7%99%D7%9D/raspberrypi/page/2/">2</a></li></ul></div>		</section><!-- section#main -->
-		<aside id="sidebar" class="col-sm-12 col-md-4" role="complementary">
-	<section id="custom_html-5" class="widget_text widget widget_custom_html"><div class="widget_text widget-inner"><div class="textwidget custom-html-widget"><a href="https://hebdevbook.com" target="_blank" rel="noopener">
-<img alt="ללמוד ג'אווהסקריפט בעברית" src="https://internet-israel.com/wp-content/uploads/2019/10/learn-javascript-in-hebrew-1.png" />
-<p>
-ללמוד לתכנת ג'אווהסקריפט בעברית שגייס יותר משלוש מאות אלף שקל ולמעלה מ-2000 תומכים - בואו ללמוד עכשיו איך לתכנת.
-</p>
-	</a></div></div></section><section id="nav_menu-3" class="widget widget_nav_menu"><div class="widget-inner"><h5 class="widget-title"><span>רשימת הנושאים</span></h5><div class="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a6%d7%93%d7%93%d7%99-container"><ul id="menu-%d7%aa%d7%a4%d7%a8%d7%99%d7%98-%d7%a6%d7%93%d7%93%d7%99" class="menu"><li id="menu-item-5586" class="guides menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-menu-ancestor current-menu-parent current-category-parent menu-item-has-children menu-item-5586"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/">מדריכים</a>
-<ul class="sub-menu">
-	<li id="menu-item-8357" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8357"><a title="ריאקט" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/react/">ריאקט</a></li>
-	<li id="menu-item-10059" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10059"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/typescript/">טייפסקריפט</a></li>
-	<li id="menu-item-6689" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6689"><a title="ECMAScript 6" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/es6/">ECMAScript 6</a></li>
-	<li id="menu-item-6690" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6690"><a title="ES20XX" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/es20xx/">ES20XX</a></li>
-	<li id="menu-item-5594" class="nodejs menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5594"><a title="Node.js" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/node-js-%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/">Node.js</a></li>
-	<li id="menu-item-6488" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6488"><a title="Express" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/express/">Express</a></li>
-	<li id="menu-item-9209" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-9209"><a title="רספברי פיי" href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/raspberrypi/" aria-current="page">רספברי פיי</a></li>
-	<li id="menu-item-6688" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6688"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/babel/">Babel</a></li>
-	<li id="menu-item-8356" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-8356"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/docker/">docker</a></li>
-	<li id="menu-item-5592" class="mongodb menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5592"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/mongodb/">MongoDB</a></li>
-	<li id="menu-item-6103" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6103"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/git/">Git</a></li>
-	<li id="menu-item-5600" class="mysql menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5600"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/mysql-%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/">לימוד MySQL</a></li>
-	<li id="menu-item-5596" class="sass menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5596"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/sass/">SASS</a></li>
-	<li id="menu-item-5590" class="jquery menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5590"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/jquery/">jQuery</a></li>
-	<li id="menu-item-5588" class="css3 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5588"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/css3/">CSS3</a></li>
-	<li id="menu-item-5589" class="html5 menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5589"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/html-5-%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/">HTML 5</a></li>
-	<li id="menu-item-6051" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-6051"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/svn/">SVN</a></li>
-	<li id="menu-item-5591" class="less menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5591"><a href="https://internet-israel.com/category/%d7%9e%d7%93%d7%a8%d7%99%d7%9b%d7%99%d7%9d/less/">LESS</a></li>
-</ul>
-</li>
-<li id="menu-item-5604" class="develop menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5604"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/">פיתוח אינטרנט</a>
-<ul class="sub-menu">
-	<li id="menu-item-5609" class="devdev menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5609"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/%d7%91%d7%a0%d7%99%d7%99%d7%aa-%d7%90%d7%aa%d7%a8%d7%99-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98-%d7%9c%d7%9e%d7%a4%d7%aa%d7%97%d7%99%d7%9d/">פתרונות ומאמרים על פיתוח אינטרנט</a></li>
-	<li id="menu-item-5605" class="advanced_js menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5605"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/jquery-scripts-%d7%a2%d7%91%d7%95%d7%a8-%d7%91%d7%95%d7%a0%d7%99-%d7%90%d7%aa%d7%a8%d7%99-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/">jQuery Scripts</a></li>
-	<li id="menu-item-5606" class="advanced_js menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5606"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/jquery-%d7%9c%d7%9e%d7%aa%d7%a7%d7%93%d7%9e%d7%99%d7%9d/">jQuery למתקדמים</a></li>
-	<li id="menu-item-5607" class="basic menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5607"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/%d7%99%d7%a1%d7%95%d7%93%d7%95%d7%aa-%d7%91%d7%aa%d7%9b%d7%a0%d7%95%d7%aa/">יסודות בתכנות</a></li>
-	<li id="menu-item-5608" class="access menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5608"><a href="https://internet-israel.com/category/%d7%a4%d7%99%d7%aa%d7%95%d7%97-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/%d7%a0%d7%92%d7%99%d7%a9%d7%95%d7%aa/">נגישות אינטרנט</a></li>
-</ul>
-</li>
-<li id="menu-item-5585" class="news menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5585"><a href="https://internet-israel.com/category/%d7%97%d7%93%d7%a9%d7%95%d7%aa-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/">חדשות אינטרנט</a></li>
-<li id="menu-item-5613" class="basic_internet menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5613"><a href="https://internet-israel.com/category/%d7%a8%d7%a9%d7%aa-%d7%94%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/%d7%9e%d7%99%d7%93%d7%a2-%d7%9b%d7%9c%d7%9c%d7%99-%d7%a2%d7%9c-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/">מידע כללי על אינטרנט</a>
-<ul class="sub-menu">
-	<li id="menu-item-5610" class="internet menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5610"><a href="https://internet-israel.com/category/%d7%a8%d7%a9%d7%aa-%d7%94%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/">רשת האינטרנט</a></li>
-	<li id="menu-item-5611" class="internet_site menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5611"><a href="https://internet-israel.com/category/%d7%a8%d7%a9%d7%aa-%d7%94%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98/%d7%91%d7%a0%d7%99%d7%99%d7%aa-%d7%90%d7%aa%d7%a8%d7%99-%d7%90%d7%99%d7%a0%d7%98%d7%a8%d7%a0%d7%98-%d7%9c%d7%90%d7%a0%d7%a9%d7%99-%d7%a2%d7%a1%d7%a7%d7%99%d7%9d/">בניית אתרי אינטרנט</a></li>
-</ul>
-</li>
-</ul></div></div></section><section id="custom_html-2" class="widget_text widget widget_custom_html"><div class="widget_text widget-inner"><div class="textwidget custom-html-widget"><div class="rpwe-block">
-	<ul class="rpwe-ul">
-		<li class="rpwe-clearfix">
-		<a rel="bookmark" href="/all/">
-		<img alt="rss logo" width="75" height="75" style="width: 75px; height: 75px;" title="כל המאמרים" class="rpwe-alignleft rpwe-thumb the-post-thumbnail wp-post-image" src="/wp-content/uploads/2016/09/list.png"/>
-		</a>
-		<h3 class="rpwe-title">
-		<a rel="bookmark" title="לכל המאמרים" href="/all/">לכל המאמרים
-		</a>
-		</h3>
-		<div class="rpwesummary">
-לכל המאמרים שפורסמו באינטרנט ישראל משנת 2008 ועד עכשיו.
-		</div>
-		</li>
-		<li class="rpwe-clearfix">
-		<a rel="bookmark" href="/feed/">
-		<img alt="rss logo" width="75" height="75" style="width: 75px; height: 75px;" title="RSS feed" class="rpwe-alignleft rpwe-thumb the-post-thumbnail wp-post-image" src="/wp-content/uploads/2014/11/rss-logo-e1415309357923.png"/>
-		</a>
-		<h3 class="rpwe-title">
-		<a rel="bookmark" title="RSS feed" href="/feed/">RSS Feed
-		</a>
-		</h3>
-		<div class="rpwesummary">
-משתמשים בקורא RSS? אם כן, עקבו אחרי אינטרנט ישראל באמצעות פיד ה-RSS!
-<br /><small><a href="/internet/רשת-האינטרנט/מידע-כללי-על-אינטרנט/מה-זה-rss/">מה זה RSS?</a></small>																					</div>
-		</li>
-		<li class="rpwe-clearfix">
-		<a rel="bookmark" href="https://twitter.com/barzik">
-		<img alt="Twitter logo" width="75" height="75"  style="width: 75px; height: 75px;" title="Twitter" class="rpwe-alignleft rpwe-thumb the-post-thumbnail wp-post-image" src="/wp-content/uploads/2014/11/Twitter_icon-e1415311274583.png"/>
-		</a>
-		<h3 class="rpwe-title">
-		<a rel="bookmark" title="Twitter" href="https://twitter.com/barzik">עקבו אחרי בטוויטר
-		</a>
-		</h3>
-		<div class="rpwesummary">
-בחשבון הטוויטר שלי אני מפרסם עדכונים מהירים על חדשות בתחום התכנות והיזמות, התרעות על מצבי חירום ורכילות בוערת על תחום הווב.
-<br />
-<small><a href="/internet/רשת-האינטרנט/מידע-כללי-על-אינטרנט/מה-זה-טוויטר/">מה זה טוויטר?</a></small> 																				</div>
-		</li>
-		<li class="rpwe-clearfix">
-		<a rel="bookmark" href="https://t.me/interil">
-		<img alt="facebook like image" width="75" height="75" style="width: 75px; height: 75px;" title="Telegram" class="rpwe-alignleft rpwe-thumb the-post-thumbnail wp-post-image" src="/wp-content/uploads/2018/01/Telegram-icon.png
-"/>
-		</a>
-		<h3 class="rpwe-title">
-		<a rel="bookmark" title="Telegram channel" href="http://t.me/interil">ערוץ הטלגרם של אינטרנט ישראל
-		</a>
-		</h3>
-		<div class="rpwesummary">
-בערוץ הטלגרם של אינטרנט ישראל אני מפרסם את הפוסטים של באתר וכן עדכונים טכנולוגיים נוספים.
-<br />
-<small><a href="/?p=7374">מה זה טלגרם?</a></small> 	
+<table class=MsoNormalTable dir=rtl border=0 cellspacing=0 cellpadding=0
+ align=right style='border-collapse:collapse;mso-table-lspace:9.0pt;margin-left:
+ 6.75pt;mso-table-rspace:9.0pt;margin-right:6.75pt;mso-table-anchor-vertical:
+ paragraph;mso-table-anchor-horizontal:margin;mso-table-left:right;mso-table-top:
+ 200.35pt;mso-padding-alt:0cm 0cm 0cm 0cm;mso-table-dir:bidi'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  height:136.5pt'>
+  <td width=682 valign=top style='width:511.5pt;padding:0cm 0cm 0cm 0cm;
+  height:136.5pt'>
+  <h1 dir=RTL style='margin-top:2.0pt;margin-right:0cm;margin-bottom:0cm;
+  margin-left:1.45pt;margin-bottom:.0001pt;text-align:center;direction:rtl;
+  unicode-bidi:embed;mso-element:frame;mso-element-wrap:around;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:200.35pt;mso-height-rule:exactly'><span
+  lang=HE style='font-family:"Tahoma",sans-serif;mso-ascii-font-family:"Century Gothic";
+  mso-ascii-theme-font:major-latin;mso-hansi-font-family:"Century Gothic";
+  mso-hansi-theme-font:major-latin;mso-fareast-language:#000D;mso-bidi-language:
+  HE'>����� ������</span></h1>
+  <p class=MsoNormal align=center dir=RTL style='text-align:center;direction:
+  rtl;unicode-bidi:embed;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:200.35pt;mso-height-rule:exactly'><span
+  dir=LTR><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
 </div>
-		</li>
-		<li class="rpwe-clearfix">
-		<a rel="bookmark" href="https://github.com/barzik">
-		<img alt="github logo" width="75" height="75"  style="width: 75px; height: 75px;" title="GitHub" class="rpwe-alignleft rpwe-thumb the-post-thumbnail wp-post-image" src="/wp-content/uploads/2014/11/github-logo-e1415311923400.png"/>
-		</a>
-		<h3 class="rpwe-title">
-		<a rel="bookmark" title="GitHub" href="https://github.com/barzik">הפרויקטים שלי בגיטהאב
-		</a>
-		</h3>
-		<div class="rpwesummary">
-הפרויקטים שאני כותב ושוחררו לציבור ברישיון קוד פתוח נמצאים ברובם בגיטהאב.																		</div>
-		</li>
-	</ul>
-</div></div></div></section><section id="search-4" class="widget widget_search"><div class="widget-inner"><h5 class="widget-title"><span>חיפוש</span></h5><form role="search" method="get" class="form form-search" action="https://internet-israel.com/">
-	<label for="s">
-		<span class="sr-only">חיפוש עבור:</span>
-		<input type="search" title="חיפוש" name="s" value="" placeholder="חיפוש..." class="field search-field">
-	</label>
-	<button value="חיפוש" class="search-submit button" type="submit">חיפוש</button>
-</form>
-</div></section></aside>				</div><!-- #content -->
-		</div><!-- .container -->
-	</div><!-- #primary -->
 
-			<div id="footer-widgets">
-	<div class="container">
-		<div class="row">
-			<section id="text-10" class="widget widget_text col-sm-12"><div class="widget-inner">			<div class="textwidget"><p>כל הזכויות שמורות לרן בר-זיק ולאינטרנט ישראל | <a href="/privacy">מדיניות הפרטיות של אתר אינטרנט ישראל</a> | אתר אינטרנט ישראל נגיש לפי תקן WCAG 2.0 AA <a href="/accessibility/"> | הצהרת הנגישות של האתר</a> | <a href="/security-policy/">אבטחת מידע ודיווח על בעיית אבטחת מידע</a></p>
+<div align=right>
+
+<table class=MsoNormalTable dir=rtl border=0 cellspacing=0 cellpadding=0
+ align=right style='border-collapse:collapse;mso-table-lspace:9.0pt;margin-left:
+ 6.75pt;mso-table-rspace:9.0pt;margin-right:6.75pt;mso-table-anchor-vertical:
+ paragraph;mso-table-anchor-horizontal:margin;mso-table-left:right;mso-table-top:
+ 379.5pt;mso-padding-alt:0cm 0cm 0cm 0cm;mso-table-dir:bidi'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:72.25pt'>
+  <td width=682 valign=top style='width:511.4pt;padding:0cm 0cm 0cm 0cm;
+  height:72.25pt'>
+  <p class=MsoNormal align=center dir=RTL style='margin-bottom:5.0pt;
+  text-align:center;direction:rtl;unicode-bidi:embed;mso-element:frame;
+  mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-left:right;
+  mso-element-top:379.5pt;mso-height-rule:exactly'><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span><span dir=LTR></span><span
+  dir=LTR><span dir=LTR></span><span style='mso-spacerun:yes'>�</span>SHAPE <span
+  style='mso-spacerun:yes'>�</span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span></span><![endif]--><span dir=LTR><!--[if gte vml 1]><v:line
+   id="����_x0020_���_x0020_83" o:spid="_x0000_s2052" alt="����� ����" style='visibility:visible;
+   mso-wrap-style:square;mso-left-percent:-10001;mso-top-percent:-10001;
+   mso-position-horizontal:absolute;mso-position-horizontal-relative:char;
+   mso-position-vertical:absolute;mso-position-vertical-relative:line;
+   mso-left-percent:-10001;mso-top-percent:-10001' from="250.2pt,151.35pt"
+   to="327.45pt,151.35pt" o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQAhdNjkvAEAAN0DAAAOAAAAZHJzL2Uyb0RvYy54bWysU8Fu3CAQvVfqPyDuXdsrJdla680hUXqp
+2qhtPoDgYY0EDAK69v59B7zrjdpKVaNcMAzz3sx7jLe3kzXsACFqdB1vVjVn4CT22u07/vTj4cOG
+s5iE64VBBx0/QuS3u/fvtqNvYY0Dmh4CIxIX29F3fEjJt1UV5QBWxBV6cHSpMFiR6Bj2VR/ESOzW
+VOu6vq5GDL0PKCFGit7Pl3xX+JUCmb4qFSEx03HqLZU1lPU5r9VuK9p9EH7Q8tSGeEUXVmhHRReq
+e5EE+xn0H1RWy4ARVVpJtBUqpSUUDaSmqX9T830QHooWMif6xab4drTyy+HOPQayYfSxjf4xZBWT
+CjZ/qT82FbOOi1kwJSYp+HHT1DfXnMnzVXXB+RDTJ0DL8qbjRrssQ7Ti8DkmqkWp55QcNo6NHV9v
+rm6uSlpEo/sHbUy+LKMAdyawg6BHTNM6PxoxvMiik3EUvGgou3Q0MPN/A8V0T103c4E8XhdOISW4
+1Jx4jaPsDFPUwQKs/w085WcolNH7H/CCKJXRpQVstcPwt+ppOres5vyzA7PubMEz9sfyusUamqHi
+3Gne85C+PBf45a/c/QIAAP//AwBQSwMEFAAGAAgAAAAhAGMBRxHYAAAAAgEAAA8AAABkcnMvZG93
+bnJldi54bWxMj81OwzAQhO9IvIO1SFwQdfgpRCFOBZQekaCAuG7ibRKRXUexm4a3x+ECl5FGs5r5
+Nl9N3KmRBt86MXCxSECRVM62Uht4f9ucp6B8QLHYOSED3+RhVRwf5ZhZd5BXGrehVrFEfIYGmhD6
+TGtfNcToF64nidnODYwh2qHWdsBDLOdOXybJjWZsJS402NNjQ9XXds8Gbsv1i0vXPG0+Pp+ez3ZX
+PD6kbMzpyXR/ByrQFP6OYcaP6FBEptLtxXrVGYiPhF+ds+X1ElQ5W13k+j968QMAAP//AwBQSwEC
+LQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNd
+LnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8BAABfcmVscy8u
+cmVsc1BLAQItABQABgAIAAAAIQAhdNjkvAEAAN0DAAAOAAAAAAAAAAAAAAAAAC4CAABkcnMvZTJv
+RG9jLnhtbFBLAQItABQABgAIAAAAIQBjAUcR2AAAAAIBAAAPAAAAAAAAAAAAAAAAABYEAABkcnMv
+ZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAGwUAAAAA
+" strokecolor="#3a3363 [3215]" strokeweight="2.25pt">
+   <v:stroke joinstyle="miter"/>
+   <w:wrap type="none" anchorx="page"/>
+   <w:anchorlock/>
+  </v:line><![endif]--><![if !vml]><img width=107 height=4
+  src="index.files/image001.png" alt="����� ����" v:shapes="����_x0020_���_x0020_83"><![endif]><!--[if gte vml 1]><v:shapetype
+   id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+   path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><![endif]--></span><!--[if mso & !supportInlineShapes & supportFields]><span
+  dir=LTR><v:shape id="_x0000_i1026" type="#_x0000_t75" style='width:77.25pt;
+   height:0'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span></span><![endif]--></p>
+  <p class=MsoNormal align=center dir=RTL style='margin-top:15.0pt;margin-right:
+  1.45pt;margin-bottom:5.0pt;margin-left:1.45pt;text-align:center;direction:
+  rtl;unicode-bidi:embed;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:379.5pt;mso-height-rule:exactly'><span
+  lang=HE style='font-size:13.0pt;mso-ansi-font-size:16.0pt;font-family:"Tahoma",sans-serif;
+  mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+  mso-fareast-language:#000D;mso-bidi-language:HE'>���, 21 �������</span></p>
+  <p class=MsoNormal align=center dir=RTL style='text-align:center;direction:
+  rtl;unicode-bidi:embed;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:379.5pt;mso-height-rule:exactly'><span
+  lang=HE style='font-size:13.0pt;mso-ansi-font-size:16.0pt;font-family:"Tahoma",sans-serif;
+  mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+  mso-fareast-language:#000D;mso-bidi-language:HE'>����, ���� ���, ������</span></p>
+  <p class=MsoNormal align=center dir=RTL style='text-align:center;direction:
+  rtl;unicode-bidi:embed;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:379.5pt;mso-height-rule:exactly'><span
+  dir=LTR><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;mso-yfti-lastrow:yes;height:94.5pt'>
+  <td width=682 valign=top style='width:511.4pt;padding:0cm 0cm 0cm 0cm;
+  height:94.5pt'>
+  <p class=MsoNormal align=center dir=RTL style='margin-bottom:5.0pt;
+  text-align:center;direction:rtl;unicode-bidi:embed;mso-element:frame;
+  mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-left:right;
+  mso-element-top:379.5pt;mso-height-rule:exactly'><!--[if mso & !supportInlineShapes & supportFields]><span
+  style='mso-element:field-begin;mso-field-lock:yes'></span><span dir=LTR></span><span
+  dir=LTR><span dir=LTR></span><span style='mso-spacerun:yes'>�</span>SHAPE <span
+  style='mso-spacerun:yes'>�</span>\* MERGEFORMAT <span style='mso-element:
+  field-separator'></span></span><![endif]--><span dir=LTR><!--[if gte vml 1]><v:line
+   id="����_x0020_���_x0020_84" o:spid="_x0000_s2051" alt="����� ����" style='visibility:visible;
+   mso-wrap-style:square;mso-left-percent:-10001;mso-top-percent:-10001;
+   mso-position-horizontal:absolute;mso-position-horizontal-relative:char;
+   mso-position-vertical:absolute;mso-position-vertical-relative:line;
+   mso-left-percent:-10001;mso-top-percent:-10001' from="250.2pt,227.9pt" to="327.45pt,227.9pt"
+   o:gfxdata="UEsDBBQABgAIAAAAIQC2gziS/gAAAOEBAAATAAAAW0NvbnRlbnRfVHlwZXNdLnhtbJSRQU7DMBBF
+90jcwfIWJU67QAgl6YK0S0CoHGBkTxKLZGx5TGhvj5O2G0SRWNoz/78nu9wcxkFMGNg6quQqL6RA
+0s5Y6ir5vt9lD1JwBDIwOMJKHpHlpr69KfdHjyxSmriSfYz+USnWPY7AufNIadK6MEJMx9ApD/oD
+OlTrorhX2lFEilmcO2RdNtjC5xDF9pCuTyYBB5bi6bQ4syoJ3g9WQ0ymaiLzg5KdCXlKLjvcW893
+SUOqXwnz5DrgnHtJTxOsQfEKIT7DmDSUCaxw7Rqn8787ZsmRM9e2VmPeBN4uqYvTtW7jvijg9N/y
+JsXecLq0q+WD6m8AAAD//wMAUEsDBBQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAX3JlbHMvLnJl
+bHOkkMFqwzAMhu+DvYPRfXGawxijTi+j0GvpHsDYimMaW0Yy2fr2M4PBMnrbUb/Q94l/f/hMi1qR
+JVI2sOt6UJgd+ZiDgffL8ekFlFSbvV0oo4EbChzGx4f9GRdb25HMsYhqlCwG5lrLq9biZkxWOiqY
+22YiTra2kYMu1l1tQD30/bPm3wwYN0x18gb45AdQl1tp5j/sFB2T0FQ7R0nTNEV3j6o9feQzro1i
+OWA14Fm+Q8a1a8+Bvu/d/dMb2JY5uiPbhG/ktn4cqGU/er3pcvwCAAD//wMAUEsDBBQABgAIAAAA
+IQAhdNjkvAEAAN0DAAAOAAAAZHJzL2Uyb0RvYy54bWysU8Fu3CAQvVfqPyDuXdsrJdla680hUXqp
+2qhtPoDgYY0EDAK69v59B7zrjdpKVaNcMAzz3sx7jLe3kzXsACFqdB1vVjVn4CT22u07/vTj4cOG
+s5iE64VBBx0/QuS3u/fvtqNvYY0Dmh4CIxIX29F3fEjJt1UV5QBWxBV6cHSpMFiR6Bj2VR/ESOzW
+VOu6vq5GDL0PKCFGit7Pl3xX+JUCmb4qFSEx03HqLZU1lPU5r9VuK9p9EH7Q8tSGeEUXVmhHRReq
+e5EE+xn0H1RWy4ARVVpJtBUqpSUUDaSmqX9T830QHooWMif6xab4drTyy+HOPQayYfSxjf4xZBWT
+CjZ/qT82FbOOi1kwJSYp+HHT1DfXnMnzVXXB+RDTJ0DL8qbjRrssQ7Ti8DkmqkWp55QcNo6NHV9v
+rm6uSlpEo/sHbUy+LKMAdyawg6BHTNM6PxoxvMiik3EUvGgou3Q0MPN/A8V0T103c4E8XhdOISW4
+1Jx4jaPsDFPUwQKs/w085WcolNH7H/CCKJXRpQVstcPwt+ppOres5vyzA7PubMEz9sfyusUamqHi
+3Gne85C+PBf45a/c/QIAAP//AwBQSwMEFAAGAAgAAAAhAGMBRxHYAAAAAgEAAA8AAABkcnMvZG93
+bnJldi54bWxMj81OwzAQhO9IvIO1SFwQdfgpRCFOBZQekaCAuG7ibRKRXUexm4a3x+ECl5FGs5r5
+Nl9N3KmRBt86MXCxSECRVM62Uht4f9ucp6B8QLHYOSED3+RhVRwf5ZhZd5BXGrehVrFEfIYGmhD6
+TGtfNcToF64nidnODYwh2qHWdsBDLOdOXybJjWZsJS402NNjQ9XXds8Gbsv1i0vXPG0+Pp+ez3ZX
+PD6kbMzpyXR/ByrQFP6OYcaP6FBEptLtxXrVGYiPhF+ds+X1ElQ5W13k+j968QMAAP//AwBQSwEC
+LQAUAAYACAAAACEAtoM4kv4AAADhAQAAEwAAAAAAAAAAAAAAAAAAAAAAW0NvbnRlbnRfVHlwZXNd
+LnhtbFBLAQItABQABgAIAAAAIQA4/SH/1gAAAJQBAAALAAAAAAAAAAAAAAAAAC8BAABfcmVscy8u
+cmVsc1BLAQItABQABgAIAAAAIQAhdNjkvAEAAN0DAAAOAAAAAAAAAAAAAAAAAC4CAABkcnMvZTJv
+RG9jLnhtbFBLAQItABQABgAIAAAAIQBjAUcR2AAAAAIBAAAPAAAAAAAAAAAAAAAAABYEAABkcnMv
+ZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAGwUAAAAA
+" strokecolor="#3a3363 [3215]" strokeweight="2.25pt">
+   <v:stroke joinstyle="miter"/>
+   <w:wrap type="none" anchorx="page"/>
+   <w:anchorlock/>
+  </v:line><![endif]--><![if !vml]><img width=107 height=4
+  src="index.files/image001.png" alt="����� ����" v:shapes="����_x0020_���_x0020_84"><![endif]></span><!--[if mso & !supportInlineShapes & supportFields]><span
+  dir=LTR><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:77.25pt;
+   height:0'>
+   <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+  </v:shape><span style='mso-element:field-end'></span></span><![endif]--></p>
+  <p class=MsoNormal align=center dir=RTL style='margin-top:15.0pt;margin-right:
+  1.45pt;margin-bottom:5.0pt;margin-left:1.45pt;text-align:center;direction:
+  rtl;unicode-bidi:embed;mso-element:frame;mso-element-frame-hspace:9.0pt;
+  mso-element-wrap:around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+  margin;mso-element-left:right;mso-element-top:379.5pt;mso-height-rule:exactly'><span
+  lang=HE style='font-size:13.0pt;mso-ansi-font-size:16.0pt;font-family:"Tahoma",sans-serif;
+  mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+  mso-fareast-language:#000D;mso-bidi-language:HE'>�� �����: [������ ���]</span></p>
+  <p class=MsoNormal align=center dir=RTL style='margin-bottom:5.0pt;
+  text-align:center;direction:rtl;unicode-bidi:embed;mso-element:frame;
+  mso-element-frame-hspace:9.0pt;mso-element-wrap:around;mso-element-anchor-vertical:
+  paragraph;mso-element-anchor-horizontal:margin;mso-element-left:right;
+  mso-element-top:379.5pt;mso-height-rule:exactly'><span lang=HE
+  style='font-size:13.0pt;mso-ansi-font-size:16.0pt;font-family:"Tahoma",sans-serif;
+  mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+  mso-fareast-language:#000D;mso-bidi-language:HE'>�� ���� ���� �: [�� �����
+  ���]</span></p>
+  </td>
+ </tr>
+</table>
+
 </div>
-		</div></section>		</div>
-	</div>
-</div>		<footer id="footer-copyright" role="contentinfo">
-			<div class="container">
-				<div class="content-copyright">
-					<div class="pull-left-copyright">
-											</div>
-					<div class="pull-right-copyright">
-											</div>
-				</div>
-			</div><!-- .container -->
-		</footer>
-	
-</div><!-- #container -->
-		<div id="pojo-scroll-up" class="pojo-scroll-up-right" data-offset="50" data-duration="750" style="font-size: 36px;border-radius: 6px">
-			<div class="pojo-scroll-up-inner">
-				<a class="pojo-scroll-up-button" href="javascript:void(0);" title="גלילה לראש העמוד">
-					<span class="fa fa-chevron-up"></span><span class="sr-only">גלילה לראש העמוד</span>
-				</a>
-			</div>
-		</div>
-		<script type='text/javascript' id='code-prettify-js-before'>
-var codePrettifyLoaderBaseUrl = "https:\/\/internet-israel.com\/wp-content\/plugins\/code-prettify\/prettify";
-</script>
-<script type='text/javascript' src='https://internet-israel.com/wp-content/plugins/code-prettify/prettify/run_prettify.js?ver=1.4.0' id='code-prettify-js'></script>
-<script type='text/javascript' src='https://internet-israel.com/wp-content/themes/scoop/assets/bootstrap/js/bootstrap.min.js?ver=3.2.0' id='pojo-plugins-js'></script>
-<script type='text/javascript' id='pojo-scripts-js-extra'>
-/* <![CDATA[ */
-var Pojo = {"ajaxurl":"https:\/\/internet-israel.com\/wp-admin\/admin-ajax.php","css_framework_type":"bootstrap","superfish_args":{"delay":150,"animation":{"opacity":"show","height":"show"},"speed":"fast"}};
-/* ]]> */
-</script>
-<script type='text/javascript' src='https://internet-israel.com/wp-content/themes/scoop/assets/js/frontend.min.js?ver=1.8.1' id='pojo-scripts-js'></script>
-<script type='text/javascript' src='https://internet-israel.com/wp-content/themes/scoop/core/assets/masterslider/masterslider.min.js?ver=2.9.5' id='masterslider-js'></script>
+
+<div align=right>
+
+<table class=MsoNormalTable dir=rtl border=0 cellspacing=0 cellpadding=0
+ align=right style='border-collapse:collapse;mso-table-lspace:9.0pt;margin-left:
+ 6.75pt;mso-table-rspace:9.0pt;margin-right:6.75pt;mso-table-anchor-vertical:
+ paragraph;mso-table-anchor-horizontal:margin;mso-table-left:right;mso-table-top:
+ 307.45pt;mso-padding-alt:0cm 0cm 0cm 0cm;mso-table-dir:bidi'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes;
+  height:29.45pt'>
+  <td width=682 valign=top style='width:511.5pt;padding:0cm 0cm 0cm 0cm;
+  height:29.45pt'>
+  <h3 dir=RTL style='text-align:center;direction:rtl;unicode-bidi:embed;
+  mso-element:frame;mso-element-wrap:around;mso-element-anchor-horizontal:margin;
+  mso-element-left:right;mso-height-rule:exactly'><span lang=HE
+  style='font-size:13.0pt;mso-ansi-font-size:20.0pt;font-family:"Tahoma",sans-serif;
+  mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+  mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+  mso-fareast-language:#000D;mso-bidi-language:HE'>��� ����� ����� ����!</span></h3>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p class=MsoNormal dir=RTL style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:1.45pt;margin-bottom:.0001pt;text-align:right;direction:rtl;
+unicode-bidi:embed'><!--[if gte vml 1]><v:shape id="�����_x0020_18" o:spid="_x0000_s2050"
+ type="#_x0000_t75" alt="��� ������ �� ������� ����� ����" style='position:absolute;
+ left:0;text-align:left;margin-left:-23.25pt;margin-top:-36pt;width:1431.75pt;
+ height:843pt;z-index:-251658240;visibility:visible;mso-wrap-style:square;
+ mso-width-percent:0;mso-height-percent:0;mso-wrap-distance-left:9pt;
+ mso-wrap-distance-top:0;mso-wrap-distance-right:9pt;
+ mso-wrap-distance-bottom:0;mso-position-horizontal:absolute;
+ mso-position-horizontal-relative:text;mso-position-vertical:absolute;
+ mso-position-vertical-relative:text;mso-width-percent:0;mso-height-percent:0;
+ mso-width-relative:margin;mso-height-relative:margin'>
+ <v:imagedata src="index.files/image002.jpg" o:title="��� ������ �� ������� ����� ����"/>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+relative;z-index:-1895825408'><span style='left:0px;position:absolute;
+left:-31px;top:-48px;width:1909px;height:1124px'><img width=1909 height=1124
+src="index.files/image003.jpg" alt="��� ������ �� ������� ����� ����" v:shapes="�����_x0020_18"></span></span><![endif]><span
+lang=HE style='font-size:13.0pt;mso-ansi-font-size:16.0pt;font-family:"Tahoma",sans-serif;
+mso-ascii-font-family:"Century Gothic";mso-ascii-theme-font:minor-latin;
+mso-hansi-font-family:"Century Gothic";mso-hansi-theme-font:minor-latin;
+mso-fareast-language:#000D;mso-bidi-language:HE'><span style='mso-tab-count:
+1'>��������� </span></span></p>
+
+</div>
+
 </body>
-</html><!-- WP Fastest Cache file was created in 0.25148296356201 seconds, on 02-07-23 17:18:13 --><!-- via php -->
-<!-- Injection By NetFree -->
-<script src="https://netfree.link/injection-script/go-payment.js" type="text/javascript" async  ></script>
-<script src="https://netfree.link/injection-script/popup-card-init.js" type="text/javascript" async  ></script>
+
+</html>
