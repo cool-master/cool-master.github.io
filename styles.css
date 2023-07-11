@@ -1,11 +1,11 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Tahoma, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #f9f5f5;
+  background-color: #f9f7f5;
   padding: 20px;
   text-align: center;
 }
@@ -27,26 +27,26 @@ section {
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 56px;
   margin-bottom: 20px;
 }
 
 p {
-  font-size: 30px;
+  font-size: 60px;
   margin-bottom: 30px;
 }
 
 .button {
   background-color: #ff7f90;
   color: #fff;
-  padding: 10px 20px;
+  padding: 20px 40px;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .image-container {
   flex: 1;
-  text-align: center;
+  text-align: right;
 }
 
 footer {
