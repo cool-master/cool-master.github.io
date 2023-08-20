@@ -46,4 +46,18 @@ fetch('http://cool-master.github.io:8080/messages')
       messageElement.textContent = message.message;
       chatBox.appendChild(messageElement);
     });
+      
+// This function maps the messages to their respective users.
+const mappedMessages = messages.map(message => ({
+  message: message.message,
+  user: message.user
+}));
+
+// This function displays the messages in the chat box.
+mappedMessages.forEach(message => {
+  const messageElement = document.createElement('li');
+  messageElement.className = message.user === 'me' ? 'message me' : 'message you';
+  messageElement.textContent = message.message;
+  chatBox.appendChild(messageElement);
+});
   });
