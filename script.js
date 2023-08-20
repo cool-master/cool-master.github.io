@@ -1,4 +1,4 @@
-    // This is the chat application.
+// This is the chat application.
 
 // Initialize the chat box.
 const chatBox = document.querySelector('.chat-box');
@@ -27,7 +27,7 @@ sendButton.addEventListener('click', () => {
     inputField.value = '';
 
     // Save the message to a file on the server.
-    fetch('https://cool-master.github.io/messages', {
+    fetch('http://cool-master.github.io/messages.txt', {
       method: 'POST',
       body: JSON.stringify({
         message: message
@@ -36,7 +36,7 @@ sendButton.addEventListener('click', () => {
 });
 
 // When the page loads, get all the messages from the server.
-fetch('https://cool-master.github.io/messages')
+fetch('http://cool-master.github.io/messages.txt')
   .then(response => response.json())
   .then(messages => {
     // Add the messages to the chat box.
