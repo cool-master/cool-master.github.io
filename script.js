@@ -1,4 +1,4 @@
-// This is the chat application.
+    // This is the chat application.
 
 // Initialize the chat box.
 const chatBox = document.querySelector('.chat-box');
@@ -25,4 +25,26 @@ sendButton.addEventListener('click', () => {
 
     // Clear the input field.
     inputField.value = '';
+
+    // Save the message to a file on the server.
+    fetch('http://localhost:8080/messages', {
+      method: 'POST',
+      body: JSON.stringify({
+        message: message
+      })
+    });
+});
+
+// When the page loads, get all the messages from the server.
+fetch('http://localhost:8080/messages')
+  .then(response => response.json())
+  .then(messages => {
+    // Add the messages to the chat box.
+    messages.forEach(message => {
+      const messageElement = document.createElement('li');
+      messageElement.className = message.user === 'me' ? 'message me' : 'message you';
+      messageElement.textContent = message.message;
+      chatBox.appendChild(messageElement);
+    });
+  });
 });
