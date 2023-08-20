@@ -27,7 +27,7 @@ sendButton.addEventListener('click', () => {
     inputField.value = '';
 
     // Save the message to a file on the server.
-    fetch('http://cool-master.github.io/messages.txt', {
+    fetch('http://localhost:8080/messages', {
       method: 'POST',
       body: JSON.stringify({
         message: message
@@ -36,7 +36,7 @@ sendButton.addEventListener('click', () => {
 });
 
 // When the page loads, get all the messages from the server.
-fetch('http://cool-master.github.io/messages.txt')
+fetch('http://localhost:8080/messages')
   .then(response => response.json())
   .then(messages => {
     // Add the messages to the chat box.
@@ -47,4 +47,3 @@ fetch('http://cool-master.github.io/messages.txt')
       chatBox.appendChild(messageElement);
     });
   });
-});
