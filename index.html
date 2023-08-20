@@ -1,41 +1,22 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Chat</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<h1>Chat</h1>
-
-<form action="chat.php" method="post">
-<input type="text" name="username" placeholder="Username">
-<input type="text" name="message" placeholder="Message">
-<input type="submit" value="Send">
-</form>
-
-<div id="messages"></div>
-
-<script>
-$(function() {
-  // When the form is submitted, send the message to the server.
-  $("#chatForm").submit(function() {
-    var data = {
-      username: $("#username").val(),
-      message: $("#message").val()
-    };
-    $.post("chat.php", data, function(response) {
-      $("#messages").append(response);
-    });
-    return false;
-  });
-
-  // Get all the messages from the server and display them in the chat box.
-  $.get("chat.php", function(response) {
-    $("#messages").html(response);
-  });
-});
-</script>
-
+    <div class="container">
+        <h1>Chat App</h1>
+        <div class="chat-box">
+            <ul class="messages"></ul>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Type your message here...">
+            <button type="submit">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
