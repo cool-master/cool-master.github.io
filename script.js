@@ -60,4 +60,6 @@ mappedMessages.forEach(message => {
   messageElement.textContent = message.message;
   chatBox.appendChild(messageElement);
 });
+
+      log("This is a message.", "chat-logs.txt");
   });
